@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="5dp"
+    app:cardPreventCornerOverlap="false"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="wrap_content"
+            android:id="@+id/slider"
+            android:layout_marginTop="10dp"
+            app:iss_period="1000"
+            app:iss_delay="0"
+            android:layout_height="400dp">
+        </com.denzcoskun.imageslider.ImageSlider>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_image"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp"
+            android:layout_below="@id/slider">
+
+<!--            <com.like.LikeButton-->
+<!--                app:icon_type="heart"-->
+<!--                app:icon_size="10dp"-->
+<!--                android:id="@+id/star_button"-->
+<!--                android:layout_width="@dimen/_25sdp"-->
+<!--                android:layout_height="@dimen/_25sdp"/>-->
+
+            <ImageView
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:id="@+id/heart_image"
+                android:src="@drawable/heart_grey"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:id="@+id/bookmark_image"
+                android:layout_toRightOf="@id/heart_image"
+                android:src="@drawable/bookmark_grey"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:id="@+id/share_image"
+                android:layout_toRightOf="@id/bookmark_image"
+                android:src="@drawable/share"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
